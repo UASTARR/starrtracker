@@ -1,7 +1,7 @@
 QT       += core gui
 QT       += serialport
 
-greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets printsupport
 
 CONFIG += c++11
 
@@ -22,6 +22,8 @@ SOURCES += \
 #    src/map/FlightTrajectory.cpp \
 #    src/map/Position.cpp \
 #    src/map/position.cpp \
+    src/graph/Graph.cpp \
+    src/graph/qcustomplot.cpp \
     src/serial/gpsparser.cpp \
     src/serial/serialthread.cpp \
     ui/mainwindow.cpp
@@ -31,8 +33,11 @@ HEADERS += \
 #    src/map/FlightTrajectory.h \
 #    src/map/Position.h \
 #    src/map/position.h \
+    src/graph/Graph.h \
+    src/graph/qcustomplot.h \
     src/serial/gpsparser.h \
     src/serial/serialthread.h \
+    src/serial/validgpsformats.h \
     ui/mainwindow.h
 
 FORMS += \
